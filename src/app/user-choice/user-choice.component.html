@@ -1,0 +1,7 @@
+<div class="headerContainer">
+    <h1>Choose your User to chat!</h1>
+</div>
+<div *ngFor="let user of users" class="buttonContainer">
+    <button (click)="chooseCharacter(user.name)">{{ user.name }}</button>
+</div>
+
